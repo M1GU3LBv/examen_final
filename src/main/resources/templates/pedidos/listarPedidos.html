@@ -14,7 +14,7 @@
         <div class="container" layout:fragment="page-content">    
             <div class="container mt-5">
 
-                <div> <h1>Pedidos <i class="fa-solid fa-cart-shopping"></i></h1> 
+                <div> <h1>Pedidos</h1> 
                 </div>
                 <hr>
                 <a th:href="@{/pedidos/form}" class="btn btn-info mb-5">Nuevo pedido</a>
@@ -46,7 +46,7 @@
                             <td th:text="${ped.precio}"></td>
 
                             <td>
-                                <a th:href="@{/pedidos/edit/} + ${ped.id}" title="Editar Registro"><i class="fa-solid fa-pencil text-warning"></i></a>
+                                <a th:href="@{/pedidos/edit/} + ${ped.id}" title="Editar Registro"><i class="fa-solid fa-pencil text-primary"></i></a>
                                 <a th:href="@{/pedidos/del/} + ${ped.id}" title="Eliminar Registro"><i class="fa-solid fa-ban text-danger"></i></a>
                             </td>
                         </tr>                    
